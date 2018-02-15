@@ -1,0 +1,14 @@
+{
+	"name"         : "clothingstore",
+	"version"      : "0.4.1",
+	"description"  : "Basic clothing store web app.",
+	"main"         : "server.js",
+	"author"       : "Mike Gindin",
+	"dependencies" : {
+		"express"    : "latest",
+		"body-parser": "latest",
+		"morgan"		 : "latest",
+		"mongoose"	 : "latest",
+		"request"	 : "latest"
+	}
+}
