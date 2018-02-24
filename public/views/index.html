@@ -15,8 +15,11 @@
     <div align="center">
         <h1>Clothing Store</h1>
         <button ng-click="getItems()">Show All</button>
-        <div ng-repeat="(key, data) in items">
-            <div> {{'Item: ' + key + ', sizes: ' +data}}</div>
+        <div ng-repeat="item in items">
+            <div ng-repeat="(key, value) in item">
+                <div>{{key + ": " + value}}</div>
+            </div>
+            <div>--</div>
         </div>
     </div>
 </body>

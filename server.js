@@ -2,18 +2,9 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var morgan = require('morgan');
-var mysql = require('mysql')
-
-// Configs
-var config = require('./config/config.js');
-
-// Connect to the DB
-var connection = mysql.createConnection(config);
 
 // Initialize the Express App
 var app = express();
-
-// Configure 
 
 // To expose public assets to the world
 app.use(express.static(__dirname + '/public'));
